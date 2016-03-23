@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.earthwhale.cmsc434doodler.MainActivity">
+
+    <com.example.earthwhale.cmsc434doodler.DoodleView
+        android:id="@+id/doodleView"
+        android:layout_width="wrap_content"
+        android:layout_height="466dp"
+        android:layout_column="0"
+        android:layout_gravity="center|fill"
+        android:layout_row="0"
+        android:background="#ffffff" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#898989"
+        android:id="@+id/gridLayoutButtons">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:id="@+id/colorButton"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transparency"
+            android:id="@+id/transparencyButton"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:id="@+id/sizeButton"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode"
+            android:textOn="Mode: Erase"
+            android:textOff="Mode: Draw"
+            android:id="@+id/toggleButton"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undo"
+            android:id="@+id/undoButton"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reflection"
+            android:id="@+id/reflectionButton"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/clearButton"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background"
+            android:id="@+id/backgroundButton"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal" />
+
+    </GridLayout>
+
+</LinearLayout>
+

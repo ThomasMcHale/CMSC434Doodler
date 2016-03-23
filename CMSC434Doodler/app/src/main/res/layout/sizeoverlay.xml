@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#505050">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stroke Size"
+        android:id="@+id/sizeLabel"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/sizeValue"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizeSeekBar"
+        android:splitTrack="false"
+        android:max="49"
+        android:visibility="visible"
+        android:progressBackgroundTint="#ffffff"
+        android:progressTint="#81e3f7"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1                                               50"
+        android:id="@+id/sizeScale"
+        android:textColorHighlight="#cf6afe"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:id="@+id/sizeCloseButton"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

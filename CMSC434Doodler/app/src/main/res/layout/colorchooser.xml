@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#505050">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Color Chooser"
+        android:id="@+id/chooserTitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Red"
+        android:id="@+id/chooserRedLabel"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/chooserRedValue"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooserRedBar"
+        android:layout_gravity="center_horizontal"
+        android:max="255"
+        android:progress="0"
+        android:indeterminate="false"
+        android:progressBackgroundTint="#ffffff"
+        android:progressTint="#f63a3a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0                                                         255"
+        android:id="@+id/chooserRedScale"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Green"
+        android:id="@+id/chooserGreenLabel"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/chooserGreenValue"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooserGreenBar"
+        android:max="255"
+        android:progress="0"
+        android:indeterminate="false"
+        android:progressBackgroundTint="#ffffff"
+        android:progressTint="#61e95d"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0                                                         255"
+        android:id="@+id/chooserGreenScale"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Blue"
+        android:id="@+id/chooserBlueLabel"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/chooserBlueValue"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooserBlueBar"
+        android:max="255"
+        android:progress="0"
+        android:indeterminate="false"
+        android:progressBackgroundTint="#ffffff"
+        android:progressTint="#81e3f7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0                                                         255"
+        android:id="@+id/chooserBlueScale"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="131dp"
+        android:layout_height="119dp"
+        android:text="Chosen Color"
+        android:id="@+id/chooserColorDisplay"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:textAlignment="center"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:id="@+id/chooserAccept"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
